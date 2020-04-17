@@ -1,0 +1,236 @@
+body {
+  background: #e52d27;
+  background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+  background: linear-gradient(to right, #b31217, #e52d27);
+}
+
+h1 {
+  color: red;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+h3 {
+  padding-left: 130px;
+}
+
+li {
+  list-style-type: none;
+  color: white;
+}
+
+.formStyle {
+  background-color: black;
+  margin-top: 250px;
+
+}
+
+#lnameTag {
+  padding-left: 77px;
+}
+
+
+#fnameTag {
+  padding-left: 100px;
+}
+
+#emailTag {
+  padding-left: 100px;
+}
+
+#passwordTag {
+  padding-left: 100px;
+}
+
+#registerInfo {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+}
+
+#loginInfo {
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+#beginRegistration {
+  cursor: pointer;
+  margin-left: 230px;
+}
+
+
+#fname {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  width: 142px;
+}
+
+#lname {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 142px;
+}
+
+#email {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+#password {
+  margin-left: 100px;
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+#loginEmail {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  width: 350px;
+
+}
+
+#loginPassword {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  width: 350px;
+}
+
+#main {
+  background: #fffc00;
+  background: -webkit-linear-gradient(to right, #ffffff, #fffc00);
+  background: linear-gradient(to right, #fffc00, #ffffff);
+  margin-top: 20px;
+  border-radius: 5px;
+
+}
+
+#addOrder {
+  padding: 20px;
+  background-color: yellow;
+  color: black;
+  margin-top: 55px;
+  margin-left: 250px;
+  margin-bottom: 20px;
+  border: solid 1px red;
+  border-radius: 5px;
+}
+
+#orderQueue {
+  background-image: url("../images/mcdonalds.jpg");
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+#loginButton {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 45px;
+  border-radius: 5px;
+  background: #4ACBFF;
+  color: white;
+  height: 40px;
+  width: 80px;
+}
+
+#registerButton {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #4ACBFF;
+  color: white;
+  height: 40px;
+  width: 80px;
+}
+
+#loginArea {
+  height: 350px;
+  background-color: white;
+  margin-top: 250px;
+}
+
+#registerArea {
+  height: 385px;
+  background-color: white;
+  margin-top: 250px;
+}
+
+#appear {
+  display: none;
+}
+
+#addToOrder {
+  background: red;
+  color: white;
+  margin: 5px;
+}
+
+#saveToOrder {
+  background: red;
+  color: white;
+  margin: 5px;
+}
+
+#createdUser {
+  padding-left: 170px;
+  padding-top: 10px;
+  display: none;
+}
+
+#created {
+  color: green;
+}
+
+#loginFailed {
+  padding-left: 100px;
+  display: none;
+}
+
+#failed {
+  color: blue;
+}
+
+#registrationError {
+  padding-left: 100px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
