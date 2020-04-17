@@ -13,7 +13,7 @@ var registrationPage = document.querySelector("#register");
 var loginPage = document.querySelector("#login");
 var error = document.querySelector("#registrationError")
 
-var  BASERL = "https://limitless-brushlands-53311.herokuapp.com";
+var  BASEURL = "https://limitless-brushlands-53311.herokuapp.com";
 
 registrationPage.style.display = 'none';
 
