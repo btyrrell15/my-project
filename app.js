@@ -13,7 +13,7 @@ var registrationPage = document.querySelector("#register");
 var loginPage = document.querySelector("#login");
 var error = document.querySelector("#registrationError")
 
-var  BASEURL = "https://limitless-brushlands-53311.herokuapp.com";
+var  URL = "https://limitless-brushlands-53311.herokuapp.com";
 
 registrationPage.style.display = 'none';
 
@@ -37,7 +37,7 @@ login.onclick = function (){
   var data = "&email=" + encodeURIComponent(email);
   data += "&password=" + encodeURIComponent(pass);
 
-  fetch(BASEURL + "/sessions", {
+  fetch(URL + "/sessions", {
     method: "POST",
     credentials: "include",
     body: data,
@@ -90,7 +90,7 @@ register.onclick = function () {
   data += "&email=" + encodeURIComponent(email);
   data += "&password=" + encodeURIComponent(pass);
 
-  fetch(BASEURL + "/users", {
+  fetch(URL + "/users", {
     method: "POST",
     credentials: "include",
     body: data,
@@ -144,7 +144,7 @@ addToOrderButton.onclick = function () {
   data += "&dessert=" + encodeURIComponent(orderDessert);
   data += "&toy=" + encodeURIComponent(orderToy);
 
-  fetch(BASEURL + "/orders", {
+  fetch(URL + "/orders", {
     method: "POST",
     credentials: "include",
     body: data,
@@ -167,7 +167,7 @@ addToOrderButton.onclick = function () {
 
 
 function deleteOrderOnServer(orderId){
-  fetch(BASEURL + "/orders/" + orderId, {
+  fetch(URL + "/orders/" + orderId, {
     method: "DELETE",
     credentials: "include",
   }).then(function(response) {
@@ -191,7 +191,7 @@ function updateOrderOnServer(drink, hamburger, fries, dessert, toy,){
   data += "&dessert=" + encodeURIComponent(editDessert);
   data += "&toy=" + encodeURIComponent(editToy);
 
-  fetch(BASEURL + "/orders/" + edited, {
+  fetch(URL + "/orders/" + edited, {
     method: "PUT",
     credentials: "include",
     body: data,
@@ -206,7 +206,7 @@ function updateOrderOnServer(drink, hamburger, fries, dessert, toy,){
 
 
 function loadOrders () {
-  fetch(BASEURL + "/orders", {
+  fetch(URL + "/orders", {
     credentials: "include"
   }).then(function(response) {
     if (response.status == 200) {
